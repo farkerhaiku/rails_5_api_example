@@ -1,10 +1,5 @@
 ## README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 Ruby version - 2.2.2
 
 sample curl to get a list of Rental Units
@@ -17,5 +12,10 @@ curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POS
 
 sample curl to get a list of users
 
+curl http://localhost:3000/users.json
+
 sample curl to create a user
+
+curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d ' {"user":{"first_name":"Bruce","last_name":"Wayne","salary":"5000000","age":"35"}}'  http://localhost:3000/users.json
+
 
